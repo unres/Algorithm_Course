@@ -1,2 +1,9 @@
 # Algorithm_Course-
-Repository containing the algorithms discussed in my algorithm class
+
+Repository containing Alogrithms discussed in class
+
+**Using: Repl.it**
+
+
+# Algorithms
+- Dijkstra
