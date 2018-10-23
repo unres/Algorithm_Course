@@ -6,5 +6,5 @@ Repository containing Alogrithms discussed in class
 Using: **Repl.it** to compile 
 
 
-# Algorithms
+## Algorithms
 - Dijkstra
