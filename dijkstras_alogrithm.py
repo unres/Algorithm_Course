@@ -15,6 +15,9 @@ def closest_unvisited(distances, unvisited):
 #v is a neighboring vertex to current_node, d is the distance to v from current_node
 def find_neighbors(G, current_node):
     neighbors = {}
+    for element in G.edges:
+        if element.start == current_node:
+            neighbors[element.end] = element.cost
     return neighbors
 #end homework
 
