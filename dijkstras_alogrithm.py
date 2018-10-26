@@ -4,7 +4,11 @@
 #Given the distances of all nodes through the source node,
 #and the unvisited nodes, returns the one with the smallest distance
 def closest_unvisited(distances, unvisited):
-    return unvisited[0]
+    smallest = unvisited[0]
+    for elements in unvisited:
+      if distances[elements] < distances[smallest]:
+        smallest = elements
+    return smallest
 
 #find_neighbors: Graph x vertex -> Dict(vertex, int)
 #Given a graph: G, and a vertex: current_node, return a dictionary (v, d) where
