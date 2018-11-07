@@ -8,3 +8,5 @@ Using: **Repl.it** to compile
 
 ## Algorithms:
 - Dijkstra
+- Toposort
+
