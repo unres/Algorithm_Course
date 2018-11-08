@@ -18,6 +18,8 @@ def find_neighbors(G, current_node):
     for element in G.edges:
         if element.start == current_node:
             neighbors[element.end] = element.cost
+        elif edge.end == current_node:
+            neighbors[element.start] = element.cost
     return neighbors
 #end homework
 
