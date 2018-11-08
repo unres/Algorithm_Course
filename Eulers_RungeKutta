@@ -1,0 +1,19 @@
+# This code is not the final code, This is based off the problem my professor gave me in class.
+
+def xpyp(y):
+  return y**2
+
+def rungeKutta( y0, y, h):
+  n = (int)((y-y0)/h)
+
+  y = y0
+  for i in range (1,n+1):
+    k1 = h * xpyp(y)
+    k2 = h * xpyp(y+.5*k1)
+    k3 = h * xpyp(y+.5*k2)
+    k4 = h * xpyp(y+ k3)
+    y = y + (1.0/6.0)*(k1 + 2 * k2 + 2 * k3 + k4)
+
+    y0 = y0 + h
+
+  return y
